@@ -9,7 +9,13 @@ const nextConfig = {
   },
   experimental: {
     serverMinification: false, // the server minification unfortunately breaks the selector class names
+    serverComponentsExternalPackages: [
+      'rebrowser-playwright-core',
+      'ghost-cursor-playwright',
+      '@playwright/browser-chromium',
+      'playwright-core'
+    ],
   },
-};  
+};
 
 export default nextConfig;
